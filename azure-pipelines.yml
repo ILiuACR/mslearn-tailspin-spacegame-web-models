@@ -42,3 +42,8 @@ steps:
     publishVstsFeed: 'Space Game - web - Dependencies/Tailspin.SpaceGame.Web.Models.First'
     allowPackageConflicts: true
   condition: succeeded()
+- task: DownloadGitHubNugetPackage@1
+  inputs:
+    packageName: 'AcrConnect.Framework.Api.Contracts'
+    version: '1.0.0.15'
+
